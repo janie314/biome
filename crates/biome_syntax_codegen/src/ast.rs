@@ -628,7 +628,7 @@ impl Field {
             }
         }
     }
-    #[expect(dead_code)]
+
     pub fn ty(&self) -> proc_macro2::Ident {
         match self {
             Field::Token { .. } => format_ident!("SyntaxToken"),
