@@ -13,16 +13,16 @@ future_incompatible,
 #[doc(hidden)]
 pub mod macros;
 
-#[allow(unsafe_code)]
+#[expect(unsafe_code)]
 pub mod cursor;
-#[allow(unsafe_code)]
+#[expect(unsafe_code)]
 mod green;
 
 pub mod syntax;
 mod syntax_node_text;
 mod utility_types;
 
-#[allow(unsafe_code)]
+#[expect(unsafe_code)]
 mod arc;
 mod ast;
 mod cow_mut;
