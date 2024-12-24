@@ -277,7 +277,6 @@ pub(crate) trait FormattedIterExt {
 
 impl<I> FormattedIterExt for I where I: std::iter::Iterator {}
 
-#[expect(dead_code)]
 pub(crate) struct FormattedIter<Iter, Item, Context>
 where
     Iter: Iterator<Item = Item>,

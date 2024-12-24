@@ -59,7 +59,6 @@ pub(crate) struct YamlLexer<'src> {
 
 impl<'source> YamlLexer<'source> {
     /// Creates a new lexer from the given string
-    #[expect(dead_code)]
     pub fn from_str(source: &'source str) -> Self {
         Self {
             source,

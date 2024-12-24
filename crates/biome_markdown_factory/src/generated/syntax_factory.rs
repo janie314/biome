@@ -8,7 +8,6 @@ use biome_rowan::{
 pub struct MarkdownSyntaxFactory;
 impl SyntaxFactory for MarkdownSyntaxFactory {
     type Kind = MarkdownSyntaxKind;
-    #[expect(unused_mut)]
     fn make_syntax(
         kind: Self::Kind,
         children: ParsedChildren<Self::Kind>,

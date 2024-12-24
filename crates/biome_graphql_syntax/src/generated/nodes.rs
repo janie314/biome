@@ -11,10 +11,7 @@ use crate::{
     GraphqlSyntaxToken as SyntaxToken,
 };
 use biome_rowan::{support, AstNode, RawSyntaxKind, SyntaxKindSet, SyntaxResult};
-use biome_rowan::{
-    AstNodeList, AstNodeListIterator, AstNodeSlotMap, AstSeparatedList,
-    AstSeparatedListNodesIterator,
-};
+use biome_rowan::{AstNodeList, AstNodeListIterator, AstSeparatedListNodesIterator};
 use serde::ser::SerializeSeq;
 use serde::{Serialize, Serializer};
 use std::fmt::{Debug, Formatter};

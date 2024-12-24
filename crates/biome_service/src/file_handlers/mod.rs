@@ -556,7 +556,6 @@ pub(crate) trait ExtensionHandler {
 pub(crate) struct Features {
     js: JsFileHandler,
     json: JsonFileHandler,
-    #[expect(unused)]
     css: CssFileHandler,
     astro: AstroFileHandler,
     vue: VueFileHandler,

@@ -241,7 +241,6 @@ struct AliasPath {
 }
 
 impl AliasPath {
-    #[expect(dead_code)]
     pub fn new(name: impl Into<String>) -> Self {
         Self {
             name: name.into(),
@@ -249,7 +248,6 @@ impl AliasPath {
         }
     }
 
-    #[expect(dead_code)]
     pub fn add_prefix(&mut self, prefix: impl Into<PathBuf>) {
         self.prefix.push(prefix.into());
     }

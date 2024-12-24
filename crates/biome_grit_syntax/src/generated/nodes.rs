@@ -10,10 +10,7 @@ use crate::{
     GritSyntaxList as SyntaxList, GritSyntaxNode as SyntaxNode, GritSyntaxToken as SyntaxToken,
 };
 use biome_rowan::{support, AstNode, RawSyntaxKind, SyntaxKindSet, SyntaxResult};
-use biome_rowan::{
-    AstNodeList, AstNodeListIterator, AstNodeSlotMap, AstSeparatedList,
-    AstSeparatedListNodesIterator,
-};
+use biome_rowan::{AstSeparatedList, AstSeparatedListNodesIterator};
 use serde::ser::SerializeSeq;
 use serde::{Serialize, Serializer};
 use std::fmt::{Debug, Formatter};

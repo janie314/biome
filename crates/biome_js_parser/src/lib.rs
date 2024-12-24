@@ -85,7 +85,6 @@ pub(crate) use state::{JsParserState, StrictMode};
 use std::fmt::Debug;
 
 pub enum JsSyntaxFeature {
-    #[expect(unused)]
     #[doc(alias = "LooseMode")]
     SloppyMode,
     StrictMode,

@@ -8,7 +8,6 @@ pub struct DebugGroupId {
 }
 
 impl DebugGroupId {
-    #[expect(unused)]
     fn new(value: NonZeroU32, debug_name: &'static str) -> Self {
         Self {
             value,

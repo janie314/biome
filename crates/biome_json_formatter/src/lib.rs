@@ -77,8 +77,6 @@ where
 /// Used to convert this object into an object that can be formatted.
 ///
 /// The difference to [AsFormat] is that this trait takes ownership of `self`.
-// False positive
-#[expect(dead_code)]
 pub(crate) trait IntoFormat<Context> {
     type Format: biome_formatter::Format<Context>;
 
@@ -129,8 +127,6 @@ pub(crate) trait FormattedIterExt {
 
 impl<I> FormattedIterExt for I where I: std::iter::Iterator {}
 
-// False positive
-#[expect(dead_code)]
 pub(crate) struct FormattedIter<Iter, Item, Context>
 where
     Iter: Iterator<Item = Item>,

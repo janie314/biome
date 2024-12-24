@@ -1889,7 +1889,7 @@ impl<Context> FormatState<Context> {
 
     /// Tracks the given token as formatted
     #[inline]
-    pub fn track_token<L: Language>(&mut self, #[expect(unused_variables)] token: &SyntaxToken<L>) {
+    pub fn track_token<L: Language>(&mut self, token: &SyntaxToken<L>) {
         cfg_if::cfg_if! {
             if #[cfg(debug_assertions)] {
                 self.printed_tokens.track_token(token);
