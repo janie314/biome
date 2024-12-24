@@ -11,7 +11,6 @@ use crate::{
     GraphqlSyntaxToken as SyntaxToken,
 };
 use biome_rowan::{support, AstNode, RawSyntaxKind, SyntaxKindSet, SyntaxResult};
-#[expect(unused)]
 use biome_rowan::{
     AstNodeList, AstNodeListIterator, AstNodeSlotMap, AstSeparatedList,
     AstSeparatedListNodesIterator,

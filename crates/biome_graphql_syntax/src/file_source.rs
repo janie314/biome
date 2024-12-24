@@ -8,7 +8,6 @@ use std::path::Path;
     Debug, Clone, Default, Copy, Eq, PartialEq, Hash, serde::Serialize, serde::Deserialize,
 )]
 pub struct GraphqlFileSource {
-    #[expect(unused)]
     variant: GraphqlVariant,
 }
 
