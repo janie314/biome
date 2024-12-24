@@ -253,7 +253,6 @@ impl AliasPath {
     }
 }
 
-#[expect(dead_code)]
 pub struct Aliases {
     aliases: Vec<AliasPath>,
 }

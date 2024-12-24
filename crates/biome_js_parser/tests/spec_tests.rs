@@ -1,5 +1,3 @@
-#![expect(non_snake_case)]
-
 mod spec_test;
 
 mod ok {

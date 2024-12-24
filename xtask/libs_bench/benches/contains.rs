@@ -1,9 +1,6 @@
-#![expect(dead_code)]
-
-use std::collections::{BTreeSet, HashSet};
-
 use fastbloom_rs::{BloomFilter, FilterBuilder, Membership};
 use qp_trie::Trie;
+use std::collections::{BTreeSet, HashSet};
 
 pub fn keywords() -> Vec<String> {
     let repeat = std::env::var("ROME_BENCH_CONTAINS_REPEAT")
