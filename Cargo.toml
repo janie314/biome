@@ -16,6 +16,7 @@ unused_macro_rules                     = "warn"
 cargo_common_metadata   = "allow"
 empty_docs              = "allow" # there are some false positives inside biome_wasm
 multiple_crate_versions = "allow"
+allow_attributes        = "deny"
 
 # pedantic
 assigning_clones             = "warn"
