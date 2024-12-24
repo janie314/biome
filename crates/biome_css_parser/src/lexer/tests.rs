@@ -1,5 +1,5 @@
 #![cfg(test)]
-#![allow(unused_mut, unused_variables, unused_assignments)]
+#![expect(unused_mut, unused_variables, unused_assignments)]
 
 use super::{CssLexer, TextSize};
 use crate::lexer::CssLexContext;

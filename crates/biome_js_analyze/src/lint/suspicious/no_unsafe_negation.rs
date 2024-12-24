@@ -135,6 +135,6 @@ impl Rule for NoUnsafeNegation {
 
 declare_node_union! {
     /// Enum for [JsInstanceofExpression] and [JsInExpression]
-    #[allow(dead_code)]
+    #[expect(dead_code)]
     pub JsInOrInstanceOfExpression  = JsInstanceofExpression  | JsInExpression
 }

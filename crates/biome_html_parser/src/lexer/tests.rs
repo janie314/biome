@@ -1,5 +1,5 @@
 #![cfg(test)]
-#![allow(unused_mut, unused_variables, unused_assignments)]
+#![expect(unused_mut, unused_variables, unused_assignments)]
 
 use super::{HtmlLexer, TextSize};
 use crate::token_source::HtmlLexContext;

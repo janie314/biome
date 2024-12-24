@@ -1,5 +1,5 @@
 #![cfg(test)]
-#![allow(unused_mut, unused_variables, unused_assignments)]
+#![expect(unused_mut, unused_variables, unused_assignments)]
 
 use super::{GritLexer, TextSize};
 use biome_grit_syntax::GritSyntaxKind::{self, *};

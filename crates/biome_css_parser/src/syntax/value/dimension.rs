@@ -178,7 +178,7 @@ fn is_nth_at_flex_unit(p: &mut CssParser, n: usize) -> bool {
     p.nth_at_ts(n, FLEX_UNIT_SET)
 }
 
-// TODO: In the future, remove the `#[allow(dead_code)]` as these get used.
+// TODO: In the future, remove the `#[expect(dead_code)]` as these get used.
 
 /// Returns true if the parser is currently at the start of a RegularDimension
 /// that will become a Length value

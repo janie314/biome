@@ -1,5 +1,5 @@
 #![cfg(test)]
-#![allow(unused_mut, unused_variables, unused_assignments)]
+#![expect(unused_mut, unused_variables, unused_assignments)]
 
 use super::{Lexer, TextSize};
 use biome_json_syntax::JsonSyntaxKind::{self, EOF};
