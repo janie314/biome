@@ -896,7 +896,7 @@ pub fn generate_nodes(ast: &AstSrc, language_kind: LanguageKind) -> Result<Strin
         };
         #[allow(unused)]
         use biome_rowan::{
-            AstNodeList, AstNodeListIterator,  AstNodeSlotMap, AstSeparatedList, AstSeparatedListNodesIterator
+            AstNodeList, AstNodeListIterator, AstNodeSlotMap, AstSeparatedList, AstSeparatedListNodesIterator
         };
         use biome_rowan::{support, AstNode,SyntaxKindSet, RawSyntaxKind, SyntaxResult};
         use std::fmt::{Debug, Formatter};
