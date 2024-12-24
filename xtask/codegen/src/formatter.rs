@@ -201,7 +201,7 @@ impl ModuleIndex {
                 // Clippy complains about child modules having the same
                 // names as their parent, eg. js/name/name.rs
                 if import == stem {
-                    content.push_str("#[allow(clippy::module_inception)]\n");
+                    content.push_str("#[expect(clippy::module_inception)]\n");
                 }
 
                 content.push_str("pub(crate) mod ");
@@ -513,7 +513,7 @@ impl BoilerplateImpls {
                 type Format<'a> = FormatRefWithRule<'a, #syntax_crate_ident::#node_id, #format_id>;
 
                 fn format(&self) -> Self::Format<'_> {
-                    #![allow(clippy::default_constructed_unit_structs)]
+                    #![expect(clippy::default_constructed_unit_structs)]
                     FormatRefWithRule::new(self, #format_id::default())
                 }
             }
@@ -522,7 +522,7 @@ impl BoilerplateImpls {
                 type Format = FormatOwnedWithRule<#syntax_crate_ident::#node_id, #format_id>;
 
                 fn into_format(self) -> Self::Format {
-                    #![allow(clippy::default_constructed_unit_structs)]
+                    #![expect(clippy::default_constructed_unit_structs)]
                     FormatOwnedWithRule::new(self, #format_id::default())
                 }
             }

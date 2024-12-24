@@ -1,7 +1,7 @@
 //! Generated file, do not edit by hand, see `xtask/codegen`
 
-#![allow(clippy::redundant_closure)]
-#![allow(clippy::too_many_arguments)]
+#![expect(clippy::redundant_closure)]
+#![expect(clippy::too_many_arguments)]
 use biome_css_syntax::{
     CssSyntaxElement as SyntaxElement, CssSyntaxNode as SyntaxNode, CssSyntaxToken as SyntaxToken,
     *,
