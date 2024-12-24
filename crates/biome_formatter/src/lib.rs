@@ -1923,10 +1923,7 @@ impl<Context> FormatState<Context> {
 
     /// Asserts in debug builds that all tokens have been printed.
     #[inline]
-    pub fn assert_formatted_all_tokens<L: Language>(
-        &self,
-        #[expect(unused_variables)] root: &SyntaxNode<L>,
-    ) {
+    pub fn assert_formatted_all_tokens<L: Language>(&self, root: &SyntaxNode<L>) {
         cfg_if::cfg_if! {
             if #[cfg(debug_assertions)] {
                 self.printed_tokens.assert_all_tracked(root);
